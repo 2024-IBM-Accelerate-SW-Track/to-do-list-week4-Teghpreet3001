@@ -1,9 +1,13 @@
-const express = require("express"), app = express(), port = process.env.PORT || 3001, cors = require("cors");
-const bodyParser = require('body-parser');
-const fs = require("fs").promises;
+import express from "express";
+const app = express();
+const port = process.env.PORT || 3001;
+import cors from "cors";
+import pkg from 'body-parser';
+const { json: _json } = pkg;
+import { promises as fs } from "fs";
 
 app.use(cors());
-app.use(bodyParser.json({ extended: true }));
+app.use(_json({ extended: true }));
 app.listen(port, () => console.log("Backend server live on " + port));
 
 app.get("/", (req, res) => {
