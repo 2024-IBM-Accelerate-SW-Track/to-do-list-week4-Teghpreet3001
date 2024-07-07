@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
+import teghpree_profile_pic from "../assets/teghpreet_profile_pic.jpg";
+
 
 export default class About extends Component {
   render() {
@@ -11,17 +12,18 @@ export default class About extends Component {
           <div className="centered">
             <img
               className="profile_image"
-              src={profile_pic}
+              src={teghpree_profile_pic}
               alt="Profile Pic"
             ></img>
           </div>
         </div>
         <div className="split right">
           <div className="centered">
-            <div className="name_title">Your Name</div>
+            <div className="name_title">Teghpreet Singh Mago</div>
             <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
+              I am Teghpreet Singh Mago, a Computer Science major at Georgia Tech, learning artificial 
+              intelligence, software engineering and product managemen. I am currently a Software Engineer 
+              Intern at Capital One and IBM Accelerate Program Participant. 
             </div>
           </div>
         </div>
